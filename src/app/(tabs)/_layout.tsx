@@ -1,7 +1,7 @@
 import { Avatar } from "@/components/avatar";
 import { Menu } from "@/components/menu";
 import { theme } from "@/theme";
-import { FontAwesome5, Foundation, Ionicons } from "@expo/vector-icons";
+import { FontAwesome5, Foundation } from "@expo/vector-icons";
 import BottomSheet from '@gorhom/bottom-sheet';
 import { Tabs } from "expo-router";
 import { useRef } from "react";
@@ -34,13 +34,6 @@ export default function TabLayout(){
             )
           }} 
         />
-        <Tabs.Screen name="search" 
-        options={{
-          tabBarIcon: ({size, color}) => (
-            <Ionicons name="search" size={size} color={color}/>
-          )
-        }} 
-        />
         <Tabs.Screen name="menu" 
         options={{
           tabBarIcon: ({size, color}) => (
@@ -55,13 +48,6 @@ export default function TabLayout(){
             }
           })
         }
-        />
-        <Tabs.Screen name="messages" 
-        options={{
-          tabBarIcon: ({size, color}) => (
-            <Ionicons name="chatbubble-ellipses" size={size} color={color}/>
-          )
-        }}
         />
         <Tabs.Screen name="profile" 
         options={
