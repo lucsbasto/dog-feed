@@ -1,5 +1,6 @@
 import { theme } from '@/theme';
 import { StyleSheet, Text, View } from 'react-native';
+
 export default function Messages(){
   return (
     <View style={styles.container}>
@@ -13,7 +14,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: theme.colors.gray[800],
+    backgroundColor: theme.colors.black,
   },
   text: {
     fontSize: 22,
