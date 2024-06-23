@@ -26,13 +26,15 @@ export default function TabLayout(){
           }
         }
         }>
-        <Tabs.Screen 
-          name="index" 
-          options={{
-            tabBarIcon: ({size, color}) => (
-              <Foundation name="home" size={size} color={color}/>
-            )
-          }} 
+        <Tabs.Screen name="profile" 
+        options={
+          {
+            tabBarIcon: ({color}) => <Avatar 
+            selected ={color=== theme.colors.white}
+            source={{uri: "https://github.com/lucsbasto.png"}}
+            />
+          }
+        }
         />
         <Tabs.Screen name="menu" 
         options={{
@@ -49,15 +51,13 @@ export default function TabLayout(){
           })
         }
         />
-        <Tabs.Screen name="profile" 
-        options={
-          {
-            tabBarIcon: ({color}) => <Avatar 
-            selected ={color=== theme.colors.white}
-            source={{uri: "https://github.com/lucsbasto.png"}}
-            />
-          }
-        }
+         <Tabs.Screen 
+          name="index" 
+          options={{
+            tabBarIcon: ({size, color}) => (
+              <Foundation name="home" size={size} color={color}/>
+            )
+          }} 
         />
       </Tabs>
       <Menu ref={bottomSheetRef} onClose={() => { handleBottomSheetClose() }}/>

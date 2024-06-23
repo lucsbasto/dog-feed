@@ -1,9 +1,10 @@
+import Header from '@/components/header';
 import { theme } from '@/theme';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 export default function Profile(){
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>Profile</Text>
+      <Header/>
     </View>
   )
 }
@@ -11,8 +12,6 @@ export default function Profile(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
     backgroundColor: theme.colors.black,
   },
   text: {

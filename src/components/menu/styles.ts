@@ -21,6 +21,15 @@ export const styles = StyleSheet.create({
     color: theme.colors.white,
     flex: 1,
     textAlign: "center",
-    marginRight: 24,
-  }
+  },
+  image: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    marginBottom: 24,
+  },
+  page: {
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
 })

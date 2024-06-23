@@ -1,7 +1,8 @@
 import { theme } from "@/theme";
+import { router } from "expo-router";
 import { useEffect } from "react";
 import { StyleSheet, View, useWindowDimensions } from "react-native";
-import Animated, { useAnimatedStyle, useSharedValue, withSequence, withTiming } from "react-native-reanimated";
+import Animated, { runOnJS, useAnimatedStyle, useSharedValue, withSequence, withTiming } from "react-native-reanimated";
 
 export default function Splash(){
   const logoScale = useSharedValue(1);
@@ -21,10 +22,18 @@ export default function Splash(){
       withTiming(1.7),
       withTiming(1, undefined, (finished) => {
         if(finished){
-          logoPositionY.value = withSequence(withTiming(100), withTiming(-dimensions.height, {duration: 400}))
+          logoPositionY.value = withSequence(
+            withTiming(200, {duration: 400}), 
+            withTiming(-dimensions.height, {duration: 600})
+          )
+
+          runOnJS(onEndSplash)()
         }
       }),
     );
+  }
+  function onEndSplash() {
+    setTimeout(() => {router.push('/(tabs)')}, 2000)
   }
 
   useEffect(() => {
@@ -47,7 +56,7 @@ const styles = StyleSheet.create({
     alignItems: 'center'
   },
   logo: {
-    width: 150,
-    height: 150,
+    width: 130,
+    height: 130,
   }
 })
