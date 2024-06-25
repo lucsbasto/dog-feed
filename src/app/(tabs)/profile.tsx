@@ -1,13 +1,59 @@
+import Badge from '@/components/badge';
 import Header from '@/components/header';
-import Slider from '@/components/slider';
 import { theme } from '@/theme';
-import { StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View } from 'react-native';
+
+const data = [
+  {
+    id: 1,
+    title: "Title 1",
+    description: "Description 1",
+    image: require("@/assets/badge.png")
+  },
+  {
+    id: 2,
+    title: "Title 2",
+    description: "Description 2",
+    image: require("@/assets/badge.png")
+  },
+  {
+    id: 3,
+    title: "Title 3",
+    image: require("@/assets/badge.png")
+  },
+  {
+    id: 4,
+    title: "Title 3",
+    image: require("@/assets/badge.png")
+  },
+  {
+    id: 5,
+    title: "Title 3",
+    image: require("@/assets/badge.png")
+  },
+  {
+    id: 6,
+    title: "Title 3",
+    image: require("@/assets/badge.png")
+  },
+]
 
 export default function Profile(){
   return (
     <View style={styles.container}>
       <Header/>
-      <Slider/>
+      <ScrollView 
+      horizontal 
+      showsHorizontalScrollIndicator={false} 
+      style={{overflow: 'visible'}}
+      contentContainerStyle={{paddingHorizontal: 15, paddingTop: 15}}
+      >
+        {
+          data.map(
+            (item: any) => (<Badge key={item.id} {...item} />)
+          )
+        }
+      </ScrollView>
     </View>
   )
 }
@@ -16,11 +62,6 @@ export default function Profile(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: theme.colors.black,
+    backgroundColor: theme.colors.gray[800],
   },
-  text: {
-    fontSize: 22,
-    color: theme.colors.white,
-    fontFamily: theme.fontFamily.bold,
-  }
 })
