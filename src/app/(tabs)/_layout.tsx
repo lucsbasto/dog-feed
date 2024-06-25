@@ -1,5 +1,5 @@
 import { Avatar } from "@/components/avatar";
-import { Menu } from "@/components/menu";
+import { FeederInfo } from "@/components/feeder";
 import { theme } from "@/theme";
 import { FontAwesome5, Foundation } from "@expo/vector-icons";
 import BottomSheet from '@gorhom/bottom-sheet';
@@ -60,7 +60,7 @@ export default function TabLayout(){
           }} 
         />
       </Tabs>
-      <Menu ref={bottomSheetRef} onClose={() => { handleBottomSheetClose() }}/>
+      <FeederInfo ref={bottomSheetRef} onClose={() => { handleBottomSheetClose() }}/>
     </View>
   )
 }
