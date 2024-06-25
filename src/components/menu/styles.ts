@@ -4,10 +4,9 @@ import { StyleSheet } from 'react-native'
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: theme.colors.gray[800],
+    borderTopLeftRadius: 20,
   },
   content: {
-    flex: 1,
-    alignItems: "center",
     padding: 24,
     height: 300,
     width: "100%",
