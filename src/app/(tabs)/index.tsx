@@ -39,14 +39,14 @@ export default function Home(){
       style={styles.map}
       ref={mapRef}
       initialRegion={{
-        latitude: location.coords.latitude, 
-        longitude: location.coords.longitude, 
+        latitude: -10.2060817, 
+        longitude: -48.3401999,
         latitudeDelta: 0.005, 
         longitudeDelta: 0.005
       }}
       >
         <Marker
-        coordinate={{latitude: location.coords.latitude, longitude: location.coords.longitude}}
+        coordinate={{latitude: -10.2060817, longitude: -48.3401999}}
         icon={require('@/assets/markers/custom_marker_empty.png')}
         />
       </MapView>
