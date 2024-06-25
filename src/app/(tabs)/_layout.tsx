@@ -1,7 +1,7 @@
 import { Avatar } from "@/components/avatar";
 import { FeederInfo } from "@/components/feeder";
 import { theme } from "@/theme";
-import { FontAwesome5, Foundation } from "@expo/vector-icons";
+import { FontAwesome5, Fontisto } from "@expo/vector-icons";
 import BottomSheet from '@gorhom/bottom-sheet';
 import { Tabs } from "expo-router";
 import { useRef } from "react";
@@ -55,7 +55,7 @@ export default function TabLayout(){
           name="index" 
           options={{
             tabBarIcon: ({size, color}) => (
-              <Foundation name="home" size={size} color={color}/>
+              <Fontisto name="world-o" size={24} color={color} />
             )
           }} 
         />
