@@ -9,7 +9,6 @@ const imageHeight = 720;
 
 const idealHeight = (width / imageWidth) * imageHeight;
 export default function SliderItem(item: ImageType) {
-  console.log(item)
   return (
     <Image source={{ uri: item.url }} key={item.id} style={styles.image} />
   )
