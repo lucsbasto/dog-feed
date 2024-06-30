@@ -5,6 +5,7 @@ import { BottomSheetScrollViewMethods } from '@gorhom/bottom-sheet/lib/typescrip
 import React, { forwardRef, useRef } from 'react';
 import { Dimensions, StyleSheet, Text, View } from 'react-native';
 import { ElevatedButton, OutlinedButton } from '../button';
+import Rating from '../rating';
 import SliderItem from '../slider';
 import { FeedspotTypes, ImageType } from './feeder';
 
@@ -71,13 +72,7 @@ export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, re
       </BottomSheetScrollView>
       <View style={styles.info}>
         <View style={{ display: 'flex', flexDirection: 'row' }}>
-          <Text>
-            <FontAwesome name="star" size={20} color="orange" />
-            <FontAwesome name="star" size={20} color="orange" />
-            <FontAwesome name="star" size={20} color="orange" />
-            <FontAwesome name="star" size={20} color="orange" />
-            <FontAwesome name="star-half-empty" size={20} color="orange" />
-          </Text>
+          <Rating rating={2.5} />
           <Text style={{ marginLeft: 240 }}>
             <FontAwesome name="heart" size={20} color={colors.red[600]} onPress={() => console.log('curtiu')} />
             {/* <FontAwesome name="heart-o" size={20} color={colors.stone[600]} onPress={() => console.log('curtiu')}/> */}
