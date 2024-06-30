@@ -10,42 +10,6 @@ import SliderItem from '../slider';
 import { FeedspotTypes, ImageType } from './feeder';
 
 export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, ref) => {
-  const data = [
-    {
-      id: 1,
-      title: "Title 1",
-      description: "Description 1",
-      rating: 4,
-      image: require("@/assets/dog-feeder-1.jpg"),
-    },
-    {
-      id: 2,
-      title: "Title 2",
-      description: "Description 2",
-      image: require("@/assets/dog-feeder-2.jpg"),
-    },
-    {
-      id: 3,
-      title: "Title 3",
-      image: require("@/assets/dog-feeder-3.jpg"),
-    },
-    {
-      id: 4,
-      title: "Title 4",
-      image: require("@/assets/dog-feeder-4.jpg"),
-    },
-    {
-      id: 5,
-      title: "Title 5",
-      image: require("@/assets/dog-feeder-5.jpg"),
-    },
-    {
-      id: 6,
-      title: "Title 6",
-      image: require("@/assets/dog-feeder-6.jpg"),
-    },
-  ];
-
   const sheetRef = useRef<BottomSheetScrollViewMethods>(null);
 
   return (
@@ -58,6 +22,7 @@ export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, re
       enablePanDownToClose={true}
     >
       <BottomSheetScrollView
+
         ref={sheetRef}
         snapToInterval={width}
         snapToAlignment="start"
@@ -66,7 +31,11 @@ export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, re
         style={styles.scrollViewContainer}
       >
         {feedspot.images?.map((item: ImageType) => {
-          return <SliderItem key={item.id} {...item} />;
+          return (
+            <View key={item.id} style={styles.item}>
+              <SliderItem {...item} />
+            </View>
+          )
         })}
       </BottomSheetScrollView>
       <View style={styles.info}>
@@ -109,11 +78,6 @@ const styles = StyleSheet.create({
     paddingBottom: 0,
     marginBottom: 0,
   },
-  scrollViewContainer: {
-    width: width,
-    height: idealHeight,
-    backgroundColor: colors.stone[900],
-  },
   info: {
     flex: 1,
     paddingLeft: 20,
@@ -151,5 +115,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     marginRight: 20,
     paddingTop: 20,
+  },
+  item: {
+    margin: 10,
   },
 });

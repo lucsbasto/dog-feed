@@ -1,17 +1,10 @@
-import { locations } from "@/assets/data/feedspots.json";
 import { Avatar } from "@/components/avatar";
-import { FeedspotInfo } from "@/components/feeder";
 import { theme } from "@/theme";
-import { FontAwesome5, Fontisto } from "@expo/vector-icons";
-import BottomSheet from '@gorhom/bottom-sheet';
+import { Fontisto } from "@expo/vector-icons";
 import { Tabs } from "expo-router";
-import { useRef } from "react";
 import { View } from "react-native";
 
 export default function TabLayout() {
-  const bottomSheetRef = useRef<BottomSheet>(null);
-  const handleBottomSheetOpen = () => bottomSheetRef.current?.expand();
-  const handleBottomSheetClose = () => bottomSheetRef.current?.snapToIndex(0);
   return (
     <View style={{ flex: 1 }}>
       <Tabs screenOptions={
@@ -36,21 +29,6 @@ export default function TabLayout() {
             }
           }
         />
-        <Tabs.Screen name="menu"
-          options={{
-            tabBarIcon: ({ size, color }) => (
-              <FontAwesome5 name="plus" size={size} color={color} />
-            )
-          }}
-          listeners={
-            () => ({
-              tabPress: (evt) => {
-                evt.preventDefault()
-                handleBottomSheetOpen()
-              }
-            })
-          }
-        />
         <Tabs.Screen
           name="index"
           options={{
@@ -60,7 +38,6 @@ export default function TabLayout() {
           }}
         />
       </Tabs>
-      <FeedspotInfo ref={bottomSheetRef} {...locations[0]} />
     </View>
   )
 }

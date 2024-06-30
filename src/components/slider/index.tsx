@@ -16,7 +16,9 @@ export default function SliderItem({ id, url }: ImageType) {
 
 const styles = StyleSheet.create({
   image: {
-    width: width,
-    height: idealHeight * 1.2,
+    width: width * 0.95,
+    height: idealHeight,
+    borderWidth: 1,
+    borderRadius: 10,
   }
 });
