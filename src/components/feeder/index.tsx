@@ -82,8 +82,8 @@ export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, re
         </View>
         <Divider />
         <View style={styles.button}>
-          <ElevatedButton title="Reportar" onPress={() => alert('Reportar Pressionado')} />
-          <OutlinedButton title="Encher" onPress={() => alert('Encher Pressionado')} />
+          <ElevatedButton title="Reportar" onPress={() => alert('Reportar')} />
+          <OutlinedButton title="Encher" onPress={() => alert('Encher')} />
         </View>
       </View>
     </BottomSheet>

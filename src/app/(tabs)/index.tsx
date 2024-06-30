@@ -27,7 +27,6 @@ export default function Home() {
     setSelectedFeedspot(feedspots.locations[0])
   }
   function onMapPress() {
-    console.log({ location })
     const animateConfig: WithTimingConfig = {
       duration: 200,
     }
