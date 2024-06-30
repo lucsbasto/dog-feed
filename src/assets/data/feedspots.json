@@ -1,0 +1,232 @@
+{
+  "locations": [
+      {
+        "images": [
+          {
+            "id": 1,
+            "url": "@/assets/dog-feeder-1.jpg"
+          },
+          {
+            "id": 2,
+            "url": "@/assets/dog-feeder-2.jpg"
+          },
+          {
+            "id": 3,
+            "url": "@/assets/dog-feeder-3.jpg"
+          },
+          {
+            "id": 4,
+            "url": "@/assets/dog-feeder-4.jpg"
+          },
+          {
+            "id": 5,
+            "url": "@/assets/dog-feeder-5.jpg"
+          },
+          {
+            "id": 6,
+            "url": "@/assets/dog-feeder-6.jpg"
+          }
+        ],
+      "id": 1,
+      "rating": 4.8,
+      "title": "Lorem Ipsum Dolor Sit Amet",
+      "address": "Rua das Flores, 123, Centro, São Paulo, SP",
+      "contacts": {
+        "phone": "+55 11 98765-4321",
+        "email": "contato@casacharmosa.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+      "images": [
+        {
+          "id": 1,
+          "url": "@/assets/dog-feeder-1.jpg"
+        },
+        {
+          "id": 2,
+          "url": "@/assets/dog-feeder-2.jpg"
+        },
+        {
+          "id": 3,
+          "url": "@/assets/dog-feeder-3.jpg"
+        },
+        {
+          "id": 4,
+          "url": "@/assets/dog-feeder-4.jpg"
+        },
+        {
+          "id": 5,
+          "url": "@/assets/dog-feeder-5.jpg"
+        },
+        {
+          "id": 6,
+          "url": "@/assets/dog-feeder-6.jpg"
+        }
+      ],
+      "id": 2,
+      "rating": 4.7,
+      "title": "Apartamento Moderno com Vista",
+      "address": "Av. Paulista, 1000, Bela Vista, São Paulo, SP",
+      "contacts": {
+        "phone": "+55 11 12345-6789",
+        "email": "reservas@apartamentomoderno.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+      "images": [
+          {
+            "id": 1,
+            "url": "@/assets/dog-feeder-1.jpg"
+          },
+          {
+            "id": 2,
+            "url": "@/assets/dog-feeder-2.jpg"
+          },
+          {
+            "id": 3,
+            "url": "@/assets/dog-feeder-3.jpg"
+          },
+          {
+            "id": 4,
+            "url": "@/assets/dog-feeder-4.jpg"
+          },
+          {
+            "id": 5,
+            "url": "@/assets/dog-feeder-5.jpg"
+          },
+          {
+            "id": 6,
+            "url": "@/assets/dog-feeder-6.jpg"
+          }
+        ],
+      "id": 3,
+      "rating": 4.9,
+      "title": "Cobertura Luxuosa na Praia",
+      "address": "Av. Atlântica, 200, Copacabana, Rio de Janeiro, RJ",
+      "contacts": {
+        "phone": "+55 21 98765-4321",
+        "email": "luxocobertura@praialuxo.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+     "images": [
+          {
+            "id": 1,
+            "url": "@/assets/dog-feeder-1.jpg"
+          },
+          {
+            "id": 2,
+            "url": "@/assets/dog-feeder-2.jpg"
+          },
+          {
+            "id": 3,
+            "url": "@/assets/dog-feeder-3.jpg"
+          },
+          {
+            "id": 4,
+            "url": "@/assets/dog-feeder-4.jpg"
+          },
+          {
+            "id": 5,
+            "url": "@/assets/dog-feeder-5.jpg"
+          },
+          {
+            "id": 6,
+            "url": "@/assets/dog-feeder-6.jpg"
+          }
+        ],
+      "id": 4,
+      "rating": 4.6,
+      "title": "Cabana Aconchegante na Montanha",
+      "address": "Estrada do Pico, 45, Serra da Mantiqueira, MG",
+      "contacts": {
+        "phone": "+55 35 98765-4321",
+        "email": "cabana@montanha.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+      "images": [
+          {
+            "id": 1,
+            "url": "@/assets/dog-feeder-1.jpg"
+          },
+          {
+            "id": 2,
+            "url": "@/assets/dog-feeder-2.jpg"
+          },
+          {
+            "id": 3,
+            "url": "@/assets/dog-feeder-3.jpg"
+          },
+          {
+            "id": 4,
+            "url": "@/assets/dog-feeder-4.jpg"
+          },
+          {
+            "id": 5,
+            "url": "@/assets/dog-feeder-5.jpg"
+          },
+          {
+            "id": 6,
+            "url": "@/assets/dog-feeder-6.jpg"
+          }
+        ],
+      "id": 5,
+      "rating": 4.5,
+      "title": "Hostel Econômico",
+      "address": "Rua do Comércio, 300, Centro, Salvador, BA",
+      "contacts": {
+        "phone": "+55 71 98765-4321",
+        "email": "hosteleconomico@salvador.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    },
+    {
+     "images": [
+          {
+            "id": 1,
+            "url": "@/assets/dog-feeder-1.jpg"
+          },
+          {
+            "id": 2,
+            "url": "@/assets/dog-feeder-2.jpg"
+          },
+          {
+            "id": 3,
+            "url": "@/assets/dog-feeder-3.jpg"
+          },
+          {
+            "id": 4,
+            "url": "@/assets/dog-feeder-4.jpg"
+          },
+          {
+            "id": 5,
+            "url": "@/assets/dog-feeder-5.jpg"
+          },
+          {
+            "id": 6,
+            "url": "@/assets/dog-feeder-6.jpg"
+          }
+        ],
+      "id": 6,
+      "rating": 4.8,
+      "title": "Casa Confortável em Palmas",
+      "address": "Quadra 104 Sul, Alameda 10, Plano Diretor Sul, Palmas, TO",
+      "contacts": {
+        "phone": "+55 63 98765-4321",
+        "email": "confortopalmas@palmas.com"
+      },
+      "latitude": 37.7749,
+      "longitude": -122.4194
+    }
+  ]
+}
