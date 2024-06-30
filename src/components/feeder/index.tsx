@@ -59,6 +59,8 @@ export const FeedspotInfo = forwardRef<BottomSheet, FeedspotTypes>((feedspot, re
     >
       <BottomSheetScrollView
         ref={sheetRef}
+        snapToInterval={width}
+        snapToAlignment="start"
         showsHorizontalScrollIndicator={true}
         horizontal
         style={styles.scrollViewContainer}
