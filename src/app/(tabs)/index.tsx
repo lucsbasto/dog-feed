@@ -13,6 +13,7 @@ import { WithTimingConfig } from 'react-native-reanimated';
 export default function Home() {
   const [selectedFeedspot, setSelectedFeedspot] = useState<FeedspotTypes | null>(null)
   const [location, setLocation] = useState<LocationObject | null>()
+
   const bottomSheetRef = useRef<BottomSheet>(null);
   const mapRef = useRef<MapView>(null)
   async function requestLocationPermissions() {
@@ -63,6 +64,14 @@ export default function Home() {
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
           }}
+          region={
+            {
+              latitude: location.coords.latitude,
+              longitude: location.coords.longitude,
+              latitudeDelta: 0.0922,
+              longitudeDelta: 0.0421,
+            }
+          }
         >
           {
             feedspots.locations.map((feedspot) => {
